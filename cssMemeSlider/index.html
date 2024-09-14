@@ -4,9 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cssMemeSlider</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <div>meme</div>
+    <div class="memes-block">
+      <div class="slider-container">
+        <div class="slider">
+          <div class="img-container">
+            <img src="./images/meme1.jpg" alt="" />
+          </div>
+          <div class="img-container">
+            <img src="./images/meme2.jpg" alt="" />
+          </div>
+          <div class="img-container">
+            <img src="./images/meme3.jpg" alt="" />
+          </div>
+          <div class="img-container">
+            <img src="./images/meme4.jpg" alt="" />
+          </div>
+          <div class="img-container">
+            <img src="./images/meme5.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <ul class="controls">
+        <li class="control">
+          <input type="radio" name="meme" id="meme1" />
+        </li>
+        <li class="control">
+          <input type="radio" name="meme" id="meme2" />
+        </li>
+        <li class="control">
+          <input type="radio" name="meme" id="meme3" />
+        </li>
+        <li class="control">
+          <input type="radio" name="meme" id="meme4" />
+        </li>
+        <li class="control">
+          <input type="radio" name="meme" id="meme5" />
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
