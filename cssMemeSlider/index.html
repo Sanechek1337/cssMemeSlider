@@ -4,9 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cssMemeSlider</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <div>meme</div>
+    <h1 class="title">Memes slider</h1>
+
+    <div class="memes-block">
+      <input type="radio" name="meme" id="meme1" checked />
+      <input type="radio" name="meme" id="meme2" />
+      <input type="radio" name="meme" id="meme3" />
+      <input type="radio" name="meme" id="meme4" />
+      <input type="radio" name="meme" id="meme5" />
+
+      <div class="slider-container">
+        <div class="slider">
+          <div class="images">
+            <div class="img-container meme-1">
+              <img src="./images/meme1.jpg" alt="" />
+            </div>
+            <div class="img-container meme-2">
+              <img src="./images/meme2.jpg" alt="" />
+            </div>
+            <div class="img-container meme-3">
+              <img src="./images/meme3.jpg" alt="" />
+            </div>
+            <div class="img-container meme-4">
+              <img src="./images/meme4.jpg" alt="" />
+            </div>
+            <div class="img-container meme-5">
+              <img src="./images/meme5.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-content">
+        <div class="meme-titles">
+          <p class="meme-title meme-title-1">Влюбленный волк уже не хищнек</p>
+          <p class="meme-title meme-title-2">HEH</p>
+          <p class="meme-title meme-title-3">Сослан в темницу распутства!</p>
+          <p class="meme-title meme-title-4">Сначала поговорим о награде</p>
+          <p class="meme-title meme-title-5">Мое туттуруу</p>
+        </div>
+
+        <ul class="controls">
+          <li class="control">
+            <label for="meme1"><span class="check"></span></label>
+          </li>
+          <li class="control">
+            <label for="meme2"><span class="check"></span></label>
+          </li>
+          <li class="control">
+            <label for="meme3"><span class="check"></span></label>
+          </li>
+          <li class="control">
+            <label for="meme4"><span class="check"></span></label>
+          </li>
+          <li class="control">
+            <label for="meme5"><span class="check"></span></label>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>

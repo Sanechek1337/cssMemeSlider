@@ -1,0 +1,289 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+@keyframes meme-title-opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.title {
+  text-align: center;
+}
+
+.memes-block {
+  max-width: 50vw;
+  margin: 0 auto;
+  padding: 20px 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+  background-color: dimgrey;
+  border-radius: 32px;
+}
+
+.slider {
+  display: flex;
+}
+
+.images {
+  display: flex;
+  transition: all 0.5s;
+}
+
+.img-container {
+  width: 50vw;
+  padding: 0 20px;
+}
+
+.img-container img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 24px;
+}
+
+.bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.meme-title {
+  font-size: 1.5rem;
+  color: #fff;
+  display: none;
+  animation: meme-title-opacity 1s;
+}
+
+.controls {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+}
+
+.control {
+  width: 24px;
+  height: 24px;
+  display: flex;
+}
+
+input[type="radio"] {
+  appearance: none;
+  display: none;
+}
+
+.control label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.check {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  background-color: #9087cc;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+label:hover .check {
+  background-color: #fff;
+}
+
+label:active .check {
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+#meme1:checked ~ .bottom-content .controls .control label[for="meme1"] .check {
+  background-color: transparent;
+  border: 2px solid #9087cc;
+}
+
+#meme1:checked ~ .bottom-content .controls .control label[for="meme1"]:hover .check {
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+#meme2:checked ~ .bottom-content .controls .control label[for="meme2"] .check {
+  background-color: transparent;
+  border: 2px solid #9087cc;
+}
+
+#meme2:checked ~ .bottom-content .controls .control label[for="meme2"]:hover .check {
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+#meme3:checked ~ .bottom-content .controls .control label[for="meme3"] .check {
+  background-color: transparent;
+  border: 2px solid #9087cc;
+}
+
+#meme3:checked ~ .bottom-content .controls .control label[for="meme3"]:hover .check {
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+#meme4:checked ~ .bottom-content .controls .control label[for="meme4"] .check {
+  background-color: transparent;
+  border: 2px solid #9087cc;
+}
+
+#meme4:checked ~ .bottom-content .controls .control label[for="meme4"]:hover .check {
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+#meme5:checked ~ .bottom-content .controls .control label[for="meme5"] .check {
+  background-color: transparent;
+  border: 2px solid #9087cc;
+}
+
+#meme5:checked ~ .bottom-content .controls .control label[for="meme5"]:hover .check {
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+#meme1:checked ~ .slider-container .slider .images {
+  transform: translateX(0);
+}
+
+#meme2:checked ~ .slider-container .slider .images {
+  transform: translateX(-50vw);
+}
+
+#meme3:checked ~ .slider-container .slider .images {
+  transform: translateX(-100vw);
+}
+
+#meme4:checked ~ .slider-container .slider .images {
+  transform: translateX(-150vw);
+}
+
+#meme5:checked ~ .slider-container .slider .images {
+  transform: translateX(-200vw);
+}
+
+#meme1:checked ~ .bottom-content .meme-title-1 {
+  display: block;
+}
+
+#meme2:checked ~ .bottom-content .meme-title-2 {
+  display: block;
+}
+
+#meme3:checked ~ .bottom-content .meme-title-3 {
+  display: block;
+}
+
+#meme4:checked ~ .bottom-content .meme-title-4 {
+  display: block;
+}
+
+#meme5:checked ~ .bottom-content .meme-title-5 {
+  display: block;
+}
+
+@media (max-width: 1440px) {
+  .memes-block {
+    max-width: 80vw;
+  }
+
+  .img-container {
+    width: 80vw;
+  }
+
+  #meme1:checked ~ .slider-container .slider .images {
+    transform: translateX(0);
+  }
+
+  #meme2:checked ~ .slider-container .slider .images {
+    transform: translateX(-80vw);
+  }
+
+  #meme3:checked ~ .slider-container .slider .images {
+    transform: translateX(-160vw);
+  }
+
+  #meme4:checked ~ .slider-container .slider .images {
+    transform: translateX(-240vw);
+  }
+
+  #meme5:checked ~ .slider-container .slider .images {
+    transform: translateX(-320vw);
+  }
+}
+
+@media (max-width: 1024px) {
+  .meme-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .bottom-content {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+
+  .meme-titles {
+    align-self: flex-start;
+  }
+
+  .memes-block {
+    max-width: 90vw;
+  }
+
+  .img-container {
+    width: 90vw;
+    padding: 0 10px;
+  }
+
+  .memes-block {
+    border-radius: 16px;
+  }
+
+  .img-container img {
+    border-radius: 8px;
+  }
+
+  #meme1:checked ~ .slider-container .slider .images {
+    transform: translateX(0);
+  }
+
+  #meme2:checked ~ .slider-container .slider .images {
+    transform: translateX(-90vw);
+  }
+
+  #meme3:checked ~ .slider-container .slider .images {
+    transform: translateX(-180vw);
+  }
+
+  #meme4:checked ~ .slider-container .slider .images {
+    transform: translateX(-270vw);
+  }
+
+  #meme5:checked ~ .slider-container .slider .images {
+    transform: translateX(-360vw);
+  }
+}
