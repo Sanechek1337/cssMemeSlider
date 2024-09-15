@@ -24,12 +24,13 @@ p {
 
 .memes-block {
   max-width: 50vw;
-  padding: 20px 0 10px;
-  overflow: hidden;
   margin: 0 auto;
-  background-color: dimgrey;
+  padding: 20px 0 30px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+  background-color: dimgrey;
   border-radius: 32px;
 }
 
@@ -59,7 +60,6 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
   padding: 0 20px;
 }
 
@@ -84,6 +84,7 @@ p {
 
 input[type="radio"] {
   appearance: none;
+  display: none;
 }
 
 .control label {
