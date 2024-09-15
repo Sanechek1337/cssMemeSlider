@@ -62,9 +62,8 @@ p {
 }
 
 .meme-title {
-  font-size: 26px;
+  font-size: 1.5rem;
   color: #fff;
-  opacity: 0;
   display: none;
   animation: meme-title-opacity 1s;
 }
@@ -188,27 +187,22 @@ label .check:active {
 
 #meme1:checked ~ .bottom-content .meme-title-1 {
   display: block;
-  opacity: 1;
 }
 
 #meme2:checked ~ .bottom-content .meme-title-2 {
   display: block;
-  opacity: 1;
 }
 
 #meme3:checked ~ .bottom-content .meme-title-3 {
   display: block;
-  opacity: 1;
 }
 
 #meme4:checked ~ .bottom-content .meme-title-4 {
   display: block;
-  opacity: 1;
 }
 
 #meme5:checked ~ .bottom-content .meme-title-5 {
   display: block;
-  opacity: 1;
 }
 
 @media (max-width: 1440px) {
@@ -243,7 +237,7 @@ label .check:active {
 
 @media (max-width: 1024px) {
   .meme-title {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 
