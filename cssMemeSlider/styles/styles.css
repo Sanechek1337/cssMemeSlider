@@ -102,15 +102,11 @@ input[type="radio"] {
   transition: 0.2s;
 }
 
-label .check:focus {
-  background-color: black;
-}
-
-label .check:hover {
+label:hover .check {
   background-color: #fff;
 }
 
-label .check:active {
+label:active .check {
   background-color: transparent;
   border: 2px solid #fff;
 }
@@ -120,7 +116,7 @@ label .check:active {
   border: 2px solid #9087cc;
 }
 
-#meme1:checked ~ .bottom-content .controls .control label[for="meme1"] .check:hover {
+#meme1:checked ~ .bottom-content .controls .control label[for="meme1"]:hover .check {
   background-color: transparent;
   border: 2px solid #fff;
 }
@@ -130,7 +126,7 @@ label .check:active {
   border: 2px solid #9087cc;
 }
 
-#meme2:checked ~ .bottom-content .controls .control label[for="meme2"] .check:hover {
+#meme2:checked ~ .bottom-content .controls .control label[for="meme2"]:hover .check {
   background-color: transparent;
   border: 2px solid #fff;
 }
@@ -140,7 +136,7 @@ label .check:active {
   border: 2px solid #9087cc;
 }
 
-#meme3:checked ~ .bottom-content .controls .control label[for="meme3"] .check:hover {
+#meme3:checked ~ .bottom-content .controls .control label[for="meme3"]:hover .check {
   background-color: transparent;
   border: 2px solid #fff;
 }
@@ -150,7 +146,7 @@ label .check:active {
   border: 2px solid #9087cc;
 }
 
-#meme4:checked ~ .bottom-content .controls .control label[for="meme4"] .check:hover {
+#meme4:checked ~ .bottom-content .controls .control label[for="meme4"]:hover .check {
   background-color: transparent;
   border: 2px solid #fff;
 }
@@ -160,7 +156,7 @@ label .check:active {
   border: 2px solid #9087cc;
 }
 
-#meme5:checked ~ .bottom-content .controls .control label[for="meme5"] .check:hover {
+#meme5:checked ~ .bottom-content .controls .control label[for="meme5"]:hover .check {
   background-color: transparent;
   border: 2px solid #fff;
 }
